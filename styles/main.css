@@ -148,6 +148,7 @@ footer {
 	background-color: #931420;
 	clear: both;
 }
+
 footer p {
 	text-align: center;
 	color: white;
@@ -164,6 +165,16 @@ footer p {
 
 #nav_menu ul li {
 	float: left;
+}
+
+#nav_menu ul ul   {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul li:hover >ul{
+	display: block;
 }
 
 #nav_menu ul li a {
@@ -190,19 +201,10 @@ footer p {
 	padding:0;
 }
 
-#nav_menu ul ul {
-	display: none;
-	position: absolute;
-	top: 100%;
-}
 
 #nav_menu ul ul li {
 	float: none;
-}
-
-
-#nav_menu ul li :hover >ul{
-	display: block;
+	
 }
 
 #nav_menu >ul::after {
